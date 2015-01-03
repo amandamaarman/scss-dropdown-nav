@@ -1,0 +1,15 @@
+/**
+ * Navbar - Navigation bar partial
+ */
+
+.navbar {
+  @include clearfix;
+  width: 100%;
+  background-color: $navbar-background-color;
+  color: $navbar-text-color;
+}
+
+.navbar__brand {
+  padding: 15px 30px;
+  font-weight: 500;
+}

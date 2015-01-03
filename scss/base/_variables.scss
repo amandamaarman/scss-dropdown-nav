@@ -1,0 +1,20 @@
+$bg-color: #ffffff;
+$text-color: #333;
+
+$link-color: #df2d2f;
+$link-color-active: darken($link-color, 15);
+
+$font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+$headings-font-weight: 500;
+
+// Navbar (.navbar)
+$navbar-background-color: #333;
+$navbar-text-color: white;
+
+// Navigation (.nav)
+$nav-padding: 15px;
+$nav-height-calculated: ($nav-padding * 2) + ($font-size-base * $line-height-base);
+$nav-background-color-hover: lighten($navbar-background-color, 10);

@@ -1,0 +1,25 @@
+{
+  "name": "scss-dropdown-nav",
+  "version": "0.0.1",
+  "authors": [
+    "Christian Petersen <chrs@cbp.io>"
+  ],
+  "description": "A SCSS Dropdown Navigation",
+  "keywords": [
+    "scss",
+    "dropdown",
+    "navigation"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.1.0"
+  }
+}

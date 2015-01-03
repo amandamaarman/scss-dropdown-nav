@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SCSS Dropdown Navigation</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="navbar">
+  <div class="container">
+    <div class="navbar__brand pull-left">phpacademy</div>
+
+    <nav class="nav pull-left">
+      <li class="nav__item">
+        <a href="#">Home</a>
+      </li>
+      <li class="nav__item">
+        <a href="#">Docs</a>
+
+        <nav class="nav nav--sub">
+          <li class="nav__item">
+            <a href="#">Getting Started</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">API Documentation</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">APIs &amp; SDKs</a>
+          </li>
+        </nav>
+      </li>
+      <li class="nav__item">
+        <a href="#">Learning</a>
+
+        <nav class="nav nav--sub">
+          <li class="nav__item">
+            <a href="#">Codecourses</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Learning Center</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Code Examples</a>
+          </li>
+        </nav>
+      </li>
+    </nav>
+  </div>
+</div>
+
+<div class="container" role="main">
+  <h1>SCSS Dropdown Navigation</h1>
+  <p>This is a dropdown navigation written in pure Sass—no JavaScript under the hood. The example is derived from <a href="http://phpacademy.org">phpacademy</a>'s <a href="https://www.youtube.com/watch?v=pYN8FUiKfzA">tutorial to make a pure CSS dropdown navigation</a>.</p>
+
+  <p>The idea with this example is to show an alternative way of achieving the effect of a dropdown that is shown when a menu item has been clicked. This shows that it can be done with less markup.</p>
+
+  <h2>How do I use this example?</h2>
+
+  <p>If you'd like to try this out yourself, visit the <a href="http://github.com/fnky/scss-dropdown-nav">Github Repo</a> and follow the instructions.</p>
+</div>
+
+</body>
+</html>

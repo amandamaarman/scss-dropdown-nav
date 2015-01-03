@@ -1,0 +1,65 @@
+/**
+ * Nav - Navigation list partial
+ */
+
+
+
+.nav {
+  @include clearfix;
+  list-style: none;
+}
+
+.nav__item {
+  a {
+    display: block;
+    color: $navbar-text-color;
+    text-decoration: none;
+    padding: $nav-padding;
+  }
+
+  &:hover {
+    background-color: $nav-background-color-hover;
+  }
+}
+
+.nav > .nav__item {
+  position: relative;
+  float: left;
+}
+
+/**
+ * Subnavigation modifier
+ */
+.nav--sub {
+  background-color: $navbar-background-color;
+  position: absolute;
+  top: $nav-height-calculated;
+  visibility: hidden;
+  opacity: 0;
+  @include transform(translateY(-($nav-height-calculated / 2)));
+  @include transform-origin(top);
+  @include transition(visibility 0 linear 150ms,
+                      transform 150ms ease-in-out 50ms,
+                      opacity 150ms linear);
+}
+
+.nav__item a:focus ~ .nav--sub {
+  opacity: 1;
+  @include transform(translateY(0));
+  @include transition-delay(0);
+  visibility: visible;
+}
+
+.nav__item a:focus {
+  background-color: $nav-background-color-hover;
+}
+
+.nav--sub > .nav__item {
+  min-width: 200px;
+  overflow: hidden;
+  float: none;
+
+  &:hover {
+    background-color: $nav-background-color-hover;
+  }
+}
