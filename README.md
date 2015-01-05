@@ -4,6 +4,8 @@ This is a dropdown navigation written in pure Sass—no JavaScript under the hoo
 
 The idea with this example is to show an alternative way of achieving the effect of a dropdown that is shown when a menu item has been clicked. This shows that it can be done with less markup.
 
+#### [Demo](https://fnky.github.io/scss-dropdown-nav)
+
 ## Prerequisites
 
 - [Node.js](http://nodejs.org/) & [npm](https://www.npmjs.org/)
